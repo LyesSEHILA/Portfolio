@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio MIAGE | Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="active">Accueil</a>
+        <a href="travaux.html">Travaux & Cours</a>
+        <a href="projets.html">Projets & Certifs</a>
+        <a href="ressources.html">Ressources</a>
+    </nav>
+
+    <div class="container" style="text-align: center; margin-top: 5vh;">
+        <header class="reveal">
+            <h1>Étudiant Ingénieur MIAGE</h1>
+            <p style="font-size: 1.3rem; color: #cbd5e1; margin: 20px 0;">
+                Portfolio de compétences et réalisations académiques
+            </p>
+        </header>
+        
+        <div class="card reveal" style="max-width: 800px; margin: 50px auto; padding: 3rem; position: relative; overflow: hidden;">
+            
+            <div style="position: absolute; top: -50px; right: -50px; width: 100px; height: 100px; background: var(--primary); filter: blur(60px); opacity: 0.5;"></div>
+
+            <div style="width: 140px; height: 140px; margin: 0 auto 2rem; border-radius: 50%; border: 3px solid var(--primary); padding: 3px; box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);">
+                <img src="assets/photo_profil.jpg" alt="Photo de profil" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+            </div>
+
+            <h2 style="border: none; padding: 0; margin-bottom: 1.5rem; font-size: 2rem;">À propos de moi</h2>
+            
+            <p style="font-size: 1.1rem; line-height: 1.8; color: #e2e8f0; margin-bottom: 2rem;">
+                Passionné par <strong>l'informatique de gestion</strong> et l'architecture logicielle. Ce portfolio est le reflet de mon parcours en Master MIAGE : il centralise mes travaux académiques, mes certifications techniques ainsi que mon projet majeur de CRM. <br>
+                <span style="display:block; margin-top:10px; font-size: 0.95rem; opacity: 0.8;">Objectif : Concevoir des solutions durables et performantes.</span>
+            </p>
+            
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="assets/cv.pdf" target="_blank" class="btn" style="display: inline-flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>Mon CV (Format ATS)</span>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/ton-profil" target="_blank" class="btn" style="background: #0077b5; display: inline-flex; align-items: center; gap: 10px;">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
