@@ -4,36 +4,99 @@
     <meta charset="UTF-8">
     <title>Travaux & Cours</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav>
         <a href="index.html">Accueil</a>
-        <a href="travaux.html">Travaux & Cours</a>
+        <a href="travaux.html" class="active">Travaux & Cours</a>
         <a href="projets.html">Projets & Certifs</a>
         <a href="ressources.html">Ressources</a>
     </nav>
 
     <div class="container">
-        <h2>Travaux Académiques</h2>
-        <p>Centralisation des productions et dossiers réalisés en classe.</p>
-        <div class="grid">
-            <div class="card">
-                <h3>TP Odoo</h3>
-                <p>Prise en main de l'ERP Odoo pour gérer une entreprise fictive de matériel informatique. L'objectif est de configurer la société et ses utilisateurs, de créer un catalogue produits, puis d'exécuter un cycle commercial complet incluant l'achat de stock, la vente client, la livraison et la facturation</p>
-                <a href="assets/TP Odoo.pdf" class="btn">Télécharger le dossier</a>
+        
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <h1 style="font-size: 2.5rem; border:none;">Travaux & Cours Académiques</h1>
+            <p style="font-size: 1.1rem; color: #cbd5e1;">Suivi chronologique des séances, supports de cours et réalisations pratiques.</p>
+        </div>
+
+        <div class="seance-container reveal">
+            <div class="seance-date"><i class="far fa-calendar-alt"></i> 16 Février 2026</div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Séance 2 : Introduction aux CRM & Découverte HubSpot</h3>
+            
+            <div class="grid">
+                <div class="card" style="border-top: 3px solid #10b981;">
+                    <h3 style="color: #10b981;"><i class="fas fa-book-open"></i> Théorie CRM</h3>
+                    <h4 style="margin: 10px 0;">Fondamentaux de la Relation Client</h4>
+                    <p style="font-size: 0.9rem;">Architecture, différences avec les PGI/ERP, et vocabulaire technique.</p>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 15px;">
+                        <a href="assets/TP2/CRM version Etudiant.docx" class="btn" style="margin:0; background: #10b981; padding: 0.6rem;"><i class="fas fa-file-word"></i> Intro aux CRM</a>
+                        <a href="assets/TP2/CRM VS PGI VERSION ETUD.odt" class="btn" style="margin:0; background: #10b981; padding: 0.6rem;"><i class="fas fa-file-alt"></i> Différence CRM vs PGI</a>
+                        <a href="assets/TP2/termes techniques CRM version Etudiant.odt" class="btn" style="margin:0; background: #10b981; padding: 0.6rem;"><i class="fas fa-file-alt"></i> Termes techniques</a>
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 3px solid #f59e0b;">
+                    <h3 style="color: #f59e0b;"><i class="fas fa-chart-line"></i> Processus de Vente</h3>
+                    <h4 style="margin: 10px 0;">Pipeline, Funnel et Workflow</h4>
+                    <p style="font-size: 0.9rem;">Outils commerciaux pour suivre le parcours client et automatiser les actions.</p>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 15px;">
+                        <a href="assets/TP2/pipeline vs funnel.docx" class="btn" style="margin:0; background: #f59e0b; padding: 0.6rem;"><i class="fas fa-file-word"></i> Pipeline vs Funnel</a>
+                        <a href="assets/TP2/Pipeline de vente VS Workflow.odt" class="btn" style="margin:0; background: #f59e0b; padding: 0.6rem;"><i class="fas fa-file-alt"></i> Pipeline vs Workflow</a>
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 3px solid var(--primary);">
+                    <span class="badge-new">Nouveau</span>
+                    <h3 style="color: var(--primary);"><i class="fas fa-laptop-code"></i> Travaux Pratiques</h3>
+                    <h4 style="margin: 10px 0;">Découverte HubSpot</h4>
+                    <p style="font-size: 0.9rem;">Prise en main du CRM, création de compte et compréhension du pipeline commercial.</p>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 15px;">
+                        <a href="assets/TP2/TP Découverte HubSpot.pdf" class="btn" style="margin:0; padding: 0.6rem;"><i class="fas fa-file-pdf"></i> TP HubSpot</a>
+                        <a href="assets/TP2/hubspot.docx" class="btn" style="margin:0; background: #4f46e5; padding: 0.6rem;"><i class="fas fa-file-word"></i> Fiche Résumé HubSpot</a>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <h2>Supports de Cours</h2>
-        <p>Notes personnelles et ressources académiques structurées.</p>
-        <div class="grid">
-            <div class="card">
-                <h3>Introduction</h3>
-                <p></p>
-                <a href="assets/Introduction_QCM.docx" class="btn"> Télécharger le document</a>
+        <div class="seance-container reveal">
+            <div class="seance-date"><i class="far fa-calendar-alt"></i> 09 Février 2026</div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Séance 1 : Fondamentaux SI et Découverte ERP</h3>
+            
+            <div class="grid">
+                
+                <div class="card" style="border-top: 3px solid #10b981;">
+                    <h3 style="color: #10b981;"><i class="fas fa-book-open"></i> Support de Cours</h3>
+                    <h4 style="margin: 10px 0;">Introduction à la Communication Digitale</h4>
+                    <p style="font-size: 0.9rem;">Comprendre l’intégration de la communication digitale dans le SI (ERP, CRM, Big Data).</p>
+                    <a href="assets/Introduction_QCM.docx" class="btn" style="background: #10b981;"><i class="fas fa-file-word"></i> Télécharger (Docx)</a>
+                </div>
+
+                <div class="card" style="border-top: 3px solid var(--primary);">
+                    <h3 style="color: var(--primary);"><i class="fas fa-laptop-code"></i> Travaux Pratiques</h3>
+                    <h4 style="margin: 10px 0;">TP Odoo - Gestion d'entreprise</h4>
+                    <p style="font-size: 0.9rem;">Prise en main de l'ERP Odoo. Configuration de société, catalogue, achat de stock, vente client et facturation.</p>
+                    <a href="assets/TP Odoo.pdf" class="btn"><i class="fas fa-file-pdf"></i> Télécharger le TP (PDF)</a>
+                </div>
+
             </div>
         </div>
+
     </div>
+    
     <script src="js/main.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(() => {
+                document.querySelectorAll('.reveal').forEach((el, index) => {
+                    setTimeout(() => {
+                        el.classList.add('active');
+                    }, index * 200); // Fait apparaître les séances l'une après l'autre
+                });
+            }, 100);
+        });
+    </script>
 </body>
 </html>

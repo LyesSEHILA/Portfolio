@@ -16,7 +16,7 @@
     </nav>
 
     <div class="container" style="text-align: center; margin-top: 5vh;">
-        <header class="reveal">
+        <header>
             <h1>Lyes SEHILA</h1>
             <p style="font-size: 1.3rem; color: #cbd5e1; margin: 20px 0;">
                 Portfolio de compétences et réalisations académiques
@@ -24,28 +24,57 @@
         </header>
         
         <div class="card reveal" style="max-width: 800px; margin: 50px auto; padding: 3rem; position: relative; overflow: hidden;">
-            
             <div style="position: absolute; top: -50px; right: -50px; width: 100px; height: 100px; background: var(--primary); filter: blur(60px); opacity: 0.5;"></div>
             <h2 style="border: none; padding: 0; margin-bottom: 1.5rem; font-size: 2rem;">À propos de moi</h2>
-            
             <p style="font-size: 1.1rem; line-height: 1.8; color: #e2e8f0; margin-bottom: 2rem;">
-                Etudiant en Master 1 Miage<br>
+                Étudiant en Master 1 MIAGE<br>
             </p>
-            
             <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
                 <a href="assets/cv.pdf" target="_blank" class="btn" style="display: inline-flex; align-items: center; gap: 10px;">
                     <i class="fas fa-file-pdf"></i>
                     <span>Mon CV (Format ATS)</span>
                 </a>
-                
                 <a href="https://www.linkedin.com/in/sehilalyes/" target="_blank" class="btn" style="background: #0077b5; display: inline-flex; align-items: center; gap: 10px;">
                     <i class="fab fa-linkedin"></i>
                     <span>LinkedIn</span>
                 </a>
             </div>
         </div>
+
+        <div class="reveal" style="text-align: left; max-width: 1000px; margin: 0 auto; margin-top: 60px;">
+            <h2><i class="fas fa-bolt" style="color: #fbbf24;"></i> Mises à jour récentes</h2>
+            <p style="color: #cbd5e1;">Accès rapide aux derniers travaux et cours publiés sur le site.</p>
+            
+            <div class="grid">
+                <div class="card" style="border-top: 3px solid var(--primary);">
+                    <span class="badge-new">Nouveau</span>
+                    <h3><i class="fas fa-laptop-code"></i> TP HubSpot</h3>
+                    <p style="font-size: 0.9rem; margin-top: 10px;">Découverte de l'interface CRM et des pipelines commerciaux.</p>
+                    <a href="travaux.html" class="btn">Accéder au TP</a>
+                </div>
+
+                <div class="card" style="border-top: 3px solid #10b981;">
+                    <span class="badge-new">Nouveau</span>
+                    <h3><i class="fas fa-book-open"></i> Théorie CRM</h3>
+                    <p style="font-size: 0.9rem; margin-top: 10px;">Fondamentaux de la Relation Client, Pipeline vs Funnel et Workflow.</p>
+                    <a href="travaux.html" class="btn" style="background: #10b981;">Consulter le cours</a>
+                </div>
+            </div>
+        </div>
     </div>
     
     <script src="js/main.js"></script>
+    <script>
+        // Petit script d'animation pour l'accueil
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(() => {
+                document.querySelectorAll('.reveal').forEach((el, index) => {
+                    setTimeout(() => {
+                        el.classList.add('active');
+                    }, index * 200);
+                });
+            }, 100);
+        });
+    </script>
 </body>
 </html>
