@@ -1,0 +1,157 @@
+/* js/translations.js */
+const translations = {
+    fr: {
+        nav_home: "Accueil",
+        nav_works: "Travaux & Cours",
+        nav_projects: "Projets & Certifs",
+        nav_resources: "Ressources",
+        
+        hero_profile: "Profil Professionnel",
+        btn_cv: "Télécharger mon CV",
+        btn_linkedin: "LinkedIn Network",
+        
+        updates_title: "Mises à jour récentes",
+        updates_subtitle: "Accès rapide aux derniers travaux et cours publiés sur le site.",
+        
+        projects_header_title: "Réalisations Digitales",
+        projects_header_desc: "Développement de solutions complexes, architecture de données et systèmes de gestion en mode SaaS.",
+        
+        tag_featured: "Projet Phare",
+        tag_presentation: "Présentation Technique",
+        
+        crm_title: "Système CRM SaaS Multi-Client",
+        crm_desc: "Conception d'une plateforme SaaS complète permettant de gérer la relation client, le suivi commercial et les facturations avec une architecture modulaire.",
+        btn_demo: "Démo Live",
+        btn_repo: "Repository",
+        
+        slides_title: "Documentation Technique & Architecture",
+        slides_desc: "Support de présentation détaillé pour la soutenance orale. Analyse de l'impact financier, diagrammes de flux et modélisation de données.",
+        btn_slides: "Télécharger Slides",
+        
+        cert_title: "Certifications & Accomplissements",
+        cert_php: "Expertise PHP",
+        cert_php_desc: "Maîtrise du développement backend et des architectures serveurs avec PHP.",
+        cert_copilot: "Microsoft Copilot",
+        cert_copilot_desc: "Optimisation de la productivité et automatisation avec l'IA générative.",
+        cert_scrum: "Scrum Master",
+        cert_scrum_desc: "Préparation avancée aux méthodologies agiles et gestion d'équipe Scrum.",
+        btn_view: "Voir",
+        btn_consult: "Consulter",
+
+        works_header_title: "Travaux & Cours Académiques",
+        works_header_subtitle: "Suivi chronologique des séances, supports de cours et réalisations pratiques.",
+        seance_1_title: "Séance 1 : Fondamentaux SI et Découverte ERP",
+        seance_1_course: "Support de Cours",
+        seance_1_course_desc: "Comprendre l’intégration de la communication digitale dans le SI (ERP, CRM, Big Data).",
+        seance_1_tp: "Travaux Pratiques",
+        seance_1_tp_desc: "Prise en main de l'ERP Odoo. Configuration de société, catalogue, achat de stock, vente client et facturation.",
+        
+        seance_2_title: "Séance 2 : Introduction aux CRM & Découverte HubSpot",
+        seance_2_theory: "Théorie CRM",
+        seance_2_theory_desc: "Architecture, différences avec les PGI/ERP, et vocabulaire technique.",
+        seance_2_process: "Processus de Vente",
+        seance_2_process_desc: "Outils commerciaux pour suivre le parcours client et automatiser les actions.",
+        seance_2_tp: "Travaux Pratiques",
+        seance_2_tp_desc: "Prise en main du CRM, création de compte et compréhension du pipeline commercial.",
+        
+        seance_6_title: "Séance 6 : Funnel Marketing et Indicateurs de Performance (KPI)",
+        seance_6_funnel: "Funnel Marketing",
+        seance_6_funnel_desc: "Étude du tunnel de conversion, création et optimisation du parcours client.",
+        seance_6_kpi: "Analyses & KPI",
+        seance_6_kpi_desc: "Mesure de la performance marketing à travers les indicateurs clés de succès.",
+        seance_6_practice: "Pratique & Évaluation",
+        seance_6_practice_desc: "TD, QCM et exercices pratiques sur les KPI et le funnel.",
+        seance_7_title: "Séance 7 : Sécurité et Préparation Certifications",
+        seance_7_security: "Sécurité Digitale",
+        seance_7_security_desc: "Étude des enjeux de sécurité dans la communication digitale.",
+        seance_7_certs: "Préparation Certifications",
+        seance_7_certs_desc: "Ressources pour la préparation des certifications professionnelles.",
+        btn_corrected_subject: "Sujet Corrigé",
+        btn_download: "Télécharger",
+        btn_access: "Accéder",
+
+        resources_header_title: "Veille & Ressources Numériques",
+        resources_header_subtitle: "Sélection de ressources pour approfondir vos connaissances en Marketing et Technologies.",
+        res_marketing: "Focus Marketing Numérique",
+        res_marketing_desc: "Apprenez les leviers essentiels pour booster la visibilité et l'engagement digital.",
+        res_tech: "Veille Technologique",
+        res_tech_desc: "Les dernières tendances du développement et de l'innovation."
+    },
+    en: {
+        nav_home: "Home",
+        nav_works: "Works & Courses",
+        nav_projects: "Projects & Certs",
+        nav_resources: "Resources",
+        
+        hero_profile: "Professional Profile",
+        btn_cv: "Download my CV",
+        btn_linkedin: "LinkedIn Network",
+        
+        updates_title: "Recent Updates",
+        updates_subtitle: "Quick access to the latest works and courses published on the site.",
+        
+        projects_header_title: "Digital Achievements",
+        projects_header_desc: "Development of complex solutions, data architecture, and SaaS management systems.",
+        
+        tag_featured: "Featured Project",
+        tag_presentation: "Technical Presentation",
+        
+        crm_title: "Multi-Client SaaS CRM System",
+        crm_desc: "Design of a complete SaaS platform to manage customer relations, sales tracking, and invoicing with a modular architecture.",
+        btn_demo: "Live Demo",
+        btn_repo: "Repository",
+        
+        slides_title: "Technical Documentation & Architecture",
+        slides_desc: "Detailed presentation support for the oral defense. Financial impact analysis, flowcharts, and data modeling.",
+        btn_slides: "Download Slides",
+        
+        cert_title: "Certifications & Achievements",
+        cert_php: "PHP Expertise",
+        cert_php_desc: "Mastery of backend development and server architectures with PHP.",
+        cert_copilot: "Microsoft Copilot",
+        cert_copilot_desc: "Productivity optimization and automation with generative AI.",
+        cert_scrum: "Scrum Master",
+        cert_scrum_desc: "Advanced preparation for agile methodologies and Scrum team management.",
+        btn_view: "View",
+        btn_consult: "Consult",
+
+        works_header_title: "Academic Works & Courses",
+        works_header_subtitle: "Chronological tracking of sessions, course materials, and practical achievements.",
+        seance_1_title: "Session 1: IS Fundamentals and ERP Discovery",
+        seance_1_course: "Course Support",
+        seance_1_course_desc: "Understanding digital communication integration into IS (ERP, CRM, Big Data).",
+        seance_1_tp: "Practical Lab",
+        seance_1_tp_desc: "Hands-on with Odoo ERP. Company config, catalog, purchasing, sales and invoicing.",
+        
+        seance_2_title: "Session 2: Introduction to CRM & HubSpot Discovery",
+        seance_2_theory: "CRM Theory",
+        seance_2_theory_desc: "Architecture, differences with ERPs, and technical vocabulary.",
+        seance_2_process: "Sales Process",
+        seance_2_process_desc: "Sales tools to track customer journey and automate actions.",
+        seance_2_tp: "Practical Lab",
+        seance_2_tp_desc: "CRM setup, account creation and understanding sales pipeline.",
+        
+        seance_6_title: "Session 6: Marketing Funnel and Performance Indicators (KPI)",
+        seance_6_funnel: "Marketing Funnel",
+        seance_6_funnel_desc: "Conversion funnel study, creation and optimization of the customer journey.",
+        seance_6_kpi: "Analytics & KPI",
+        seance_6_kpi_desc: "Measuring marketing performance through key success indicators.",
+        seance_6_practice: "Practice & Evaluation",
+        seance_6_practice_desc: "TD, QCM and practical exercises on KPIs and funnel.",
+        seance_7_title: "Session 7: Security and Certification Preparation",
+        seance_7_security: "Digital Security",
+        seance_7_security_desc: "Study of security challenges in digital communication.",
+        seance_7_certs: "Certification Prep",
+        seance_7_certs_desc: "Resources for professional certification preparation.",
+        btn_corrected_subject: "Corrected Subject",
+        btn_download: "Download",
+        btn_access: "Access",
+
+        resources_header_title: "Digital Watch & Resources",
+        resources_header_subtitle: "Selection of resources to deepen your knowledge in Marketing and Technologies.",
+        res_marketing: "Digital Marketing Focus",
+        res_marketing_desc: "Learn the essential levers to boost digital visibility and engagement.",
+        res_tech: "Technology Watch",
+        res_tech_desc: "The latest trends in development and innovation."
+    }
+};

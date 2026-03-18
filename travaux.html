@@ -2,89 +2,146 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Travaux & Cours</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travaux & Cours | Lyes SEHILA</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav>
-        <a href="index.html">Accueil</a>
-        <a href="travaux.html" class="active">Travaux & Cours</a>
-        <a href="projets.html">Projets & Certifs</a>
-        <a href="ressources.html">Ressources</a>
+        <div class="nav-links">
+            <a href="index.html" data-i18n="nav_home">Accueil</a>
+            <a href="travaux.html" class="active" data-i18n="nav_works">Travaux & Cours</a>
+            <a href="projets.html" data-i18n="nav_projects">Projets & Certifs</a>
+            <a href="ressources.html" data-i18n="nav_resources">Ressources</a>
+        </div>
+        <button id="lang-switch" class="lang-btn">
+            <span class="lang-text">EN</span>
+            <i class="fas fa-globe"></i>
+        </button>
     </nav>
 
     <div class="container">
         
         <div style="text-align: center; margin-bottom: 4rem;">
-            <h1 style="font-size: 2.5rem; border:none;">Travaux & Cours Académiques</h1>
-            <p style="font-size: 1.1rem; color: #cbd5e1;">Suivi chronologique des séances, supports de cours et réalisations pratiques.</p>
+            <h1 data-i18n="works_header_title" style="font-size: 2.5rem; border:none;">Travaux & Cours Académiques</h1>
+            <p data-i18n="works_header_subtitle" style="font-size: 1.1rem; color: #cbd5e1;">Suivi chronologique des séances, supports de cours et réalisations pratiques.</p>
         </div>
 
+        <!-- SÉANCE 7 -->
         <div class="seance-container reveal">
-            <div class="seance-date"><i class="far fa-calendar-alt"></i> 16 Février 2026</div>
-            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Séance 2 : Introduction aux CRM & Découverte HubSpot</h3>
+            <div class="seance-date"><i class="far fa-calendar-alt"></i> 23 Mars 2026</div>
+            <h3 data-i18n="seance_7_title" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Séance 7 : Sécurité et Préparation Certifications</h3>
             
             <div class="grid">
-                <div class="card" style="border-top: 3px solid #10b981;">
-                    <h3 style="color: #10b981;"><i class="fas fa-book-open"></i> Théorie CRM</h3>
-                    <h4 style="margin: 10px 0;">Fondamentaux de la Relation Client</h4>
-                    <p style="font-size: 0.9rem;">Architecture, différences avec les PGI/ERP, et vocabulaire technique.</p>
+                <div class="card" style="border-top: 3px solid #ef4444;">
+                    <h3 data-i18n="seance_7_security" style="color: #ef4444;"><i class="fas fa-shield-alt"></i> Sécurité Digitale</h3>
+                    <p data-i18n="seance_7_security_desc" style="font-size: 0.9rem; margin-top: 10px;">Étude des enjeux de sécurité dans la communication digitale.</p>
                     <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 15px;">
-                        <a href="assets/TP2/CRM version Etudiant.docx" class="btn" style="margin:0; background: #10b981; padding: 0.6rem;"><i class="fas fa-file-word"></i> Intro aux CRM</a>
-                        <a href="assets/TP2/CRM VS PGI VERSION ETUD.odt" class="btn" style="margin:0; background: #10b981; padding: 0.6rem;"><i class="fas fa-file-alt"></i> Différence CRM vs PGI</a>
-                        <a href="assets/TP2/termes techniques CRM version Etudiant.odt" class="btn" style="margin:0; background: #10b981; padding: 0.6rem;"><i class="fas fa-file-alt"></i> Termes techniques</a>
+                        <a href="assets/Séance 7/8_sécurité et communication digitale.docx" target="_blank" class="btn" style="margin:0; background: #ef4444; padding: 0.6rem;"><i class="fas fa-file-word"></i> Sécurité & Comm</a>
                     </div>
                 </div>
 
-                <div class="card" style="border-top: 3px solid #f59e0b;">
-                    <h3 style="color: #f59e0b;"><i class="fas fa-chart-line"></i> Processus de Vente</h3>
-                    <h4 style="margin: 10px 0;">Pipeline, Funnel et Workflow</h4>
-                    <p style="font-size: 0.9rem;">Outils commerciaux pour suivre le parcours client et automatiser les actions.</p>
+                <div class="card" style="border-top: 3px solid #8b5cf6;">
+                    <h3 data-i18n="seance_7_certs" style="color: #8b5cf6;"><i class="fas fa-id-card"></i> Préparation Certifications</h3>
+                    <p data-i18n="seance_7_certs_desc" style="font-size: 0.9rem; margin-top: 10px;">Ressources pour la préparation des certifications professionnelles.</p>
                     <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 15px;">
-                        <a href="assets/TP2/pipeline vs funnel.docx" class="btn" style="margin:0; background: #f59e0b; padding: 0.6rem;"><i class="fas fa-file-word"></i> Pipeline vs Funnel</a>
-                        <a href="assets/TP2/Pipeline de vente VS Workflow.odt" class="btn" style="margin:0; background: #f59e0b; padding: 0.6rem;"><i class="fas fa-file-alt"></i> Pipeline vs Workflow</a>
-                    </div>
-                </div>
-
-                <div class="card" style="border-top: 3px solid var(--primary);">
-                    <span class="badge-new">Nouveau</span>
-                    <h3 style="color: var(--primary);"><i class="fas fa-laptop-code"></i> Travaux Pratiques</h3>
-                    <h4 style="margin: 10px 0;">Découverte HubSpot</h4>
-                    <p style="font-size: 0.9rem;">Prise en main du CRM, création de compte et compréhension du pipeline commercial.</p>
-                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 15px;">
-                        <a href="assets/TP2/TP Découverte HubSpot.pdf" class="btn" style="margin:0; padding: 0.6rem;"><i class="fas fa-file-pdf"></i> TP HubSpot</a>
-                        <a href="assets/TP2/hubspot.docx" class="btn" style="margin:0; background: #4f46e5; padding: 0.6rem;"><i class="fas fa-file-word"></i> Fiche Résumé HubSpot</a>
+                        <a href="assets/Séance 7/Préparation certifications.docx" target="_blank" class="btn" style="margin:0; background: #8b5cf6; padding: 0.6rem;"><i class="fas fa-file-word"></i> Certifs Prep</a>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- SÉANCE 6 -->
         <div class="seance-container reveal">
-            <div class="seance-date"><i class="far fa-calendar-alt"></i> 09 Février 2026</div>
-            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Séance 1 : Fondamentaux SI et Découverte ERP</h3>
+            <div class="seance-date"><i class="far fa-calendar-alt"></i> 16 Mars 2026</div>
+            <h3 data-i18n="seance_6_title" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Séance 6 : Funnel Marketing et Indicateurs de Performance (KPI)</h3>
             
             <div class="grid">
-                
                 <div class="card" style="border-top: 3px solid #10b981;">
-                    <h3 style="color: #10b981;"><i class="fas fa-book-open"></i> Support de Cours</h3>
-                    <h4 style="margin: 10px 0;">Introduction à la Communication Digitale</h4>
-                    <p style="font-size: 0.9rem;">Comprendre l’intégration de la communication digitale dans le SI (ERP, CRM, Big Data).</p>
-                    <a href="assets/Introduction_QCM.docx" class="btn" style="background: #10b981;"><i class="fas fa-file-word"></i> Télécharger (Docx)</a>
+                    <h3 data-i18n="seance_6_funnel" style="color: #10b981;"><i class="fas fa-filter"></i> Funnel Marketing</h3>
+                    <p data-i18n="seance_6_funnel_desc" style="font-size: 0.9rem; margin-top: 10px;">Étude du tunnel de conversion, création et optimisation du parcours client.</p>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 15px;">
+                        <a href="assets/Séance 6/fiche cours V_E.pdf" target="_blank" class="btn" style="margin:0; background: #10b981; padding: 0.6rem;"><i class="fas fa-file-pdf"></i> <span data-i18n="btn_download">Télécharger</span> Fiche Cours</a>
+                        <a href="assets/Séance 6/Pourquoi Étudier le funnel marketing V_E.pdf" target="_blank" class="btn" style="margin:0; background: #10b981; padding: 0.6rem;"><i class="fas fa-file-pdf"></i> <span data-i18n="btn_download">Télécharger</span> Pourquoi le Funnel ?</a>
+                        <a href="assets/Séance 6/création de funnel marketing.docx.pdf" target="_blank" class="btn" style="margin:0; background: #10b981; padding: 0.6rem;"><i class="fas fa-file-pdf"></i> <span data-i18n="btn_download">Télécharger</span> Création de Funnel</a>
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 3px solid #3b82f6;">
+                    <h3 data-i18n="seance_6_kpi" style="color: #3b82f6;"><i class="fas fa-chart-line"></i> Analyses & KPI</h3>
+                    <p data-i18n="seance_6_kpi_desc" style="font-size: 0.9rem; margin-top: 10px;">Mesure de la performance marketing à travers les indicateurs clés de succès.</p>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 15px;">
+                        <a href="assets/Séance 6/ Les indicateurs KPI V_E.docx.pdf" target="_blank" class="btn" style="margin:0; background: #3b82f6; padding: 0.6rem;"><i class="fas fa-file-pdf"></i> <span data-i18n="btn_download">Télécharger</span> Indicateurs KPI</a>
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 3px solid #f59e0b;">
+                    <h3 data-i18n="seance_6_practice" style="color: #f59e0b;"><i class="fas fa-user-edit"></i> Pratique & Évaluation</h3>
+                    <p data-i18n="seance_6_practice_desc" style="font-size: 0.9rem; margin-top: 10px;">TD, QCM et exercices pratiques sur les KPI et le funnel.</p>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 15px;">
+                        <a href="assets/Séance 6/Td + QCM pour étudiants.pdf" target="_blank" class="btn" style="margin:0; background: #f59e0b; padding: 0.6rem;"><i class="fas fa-file-pdf"></i> TD + QCM</a>
+                        <a href="assets/Séance 6/sujet corrigé.docx.pdf" target="_blank" class="btn" style="margin:0; background: #f59e0b; padding: 0.6rem;"><i class="fas fa-file-pdf"></i> <span data-i18n="btn_corrected_subject">Sujet Corrigé</span></a>
+                        <a href="assets/Séance 6/tp KPI V_E.ods" target="_blank" class="btn" style="margin:0; background: #f59e0b; padding: 0.6rem;"><i class="fas fa-file-excel"></i> TP KPI (Excel/ODS)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SÉANCE 2 -->
+        <div class="seance-container reveal">
+            <div class="seance-date"><i class="far fa-calendar-alt"></i> 16 Février 2026</div>
+            <h3 data-i18n="seance_2_title" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Séance 2 : Introduction aux CRM & Découverte HubSpot</h3>
+            
+            <div class="grid">
+                <div class="card" style="border-top: 3px solid #10b981;">
+                    <h3 data-i18n="seance_2_theory" style="color: #10b981;"><i class="fas fa-book-open"></i> Théorie CRM</h3>
+                    <p data-i18n="seance_2_theory_desc" style="font-size: 0.9rem; margin-top: 10px;">Architecture, différences avec les PGI/ERP, et vocabulaire technique.</p>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 15px;">
+                        <a href="assets/TP2/CRM version Etudiant.docx" class="btn" style="margin:0; background: #10b981; padding: 0.6rem;"><i class="fas fa-file-word"></i> Intro CRM</a>
+                        <a href="assets/TP2/CRM VS PGI VERSION ETUD.odt" class="btn" style="margin:0; background: #10b981; padding: 0.6rem;"><i class="fas fa-file-alt"></i> CRM vs PGI</a>
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 3px solid #f59e0b;">
+                    <h3 data-i18n="seance_2_process" style="color: #f59e0b;"><i class="fas fa-chart-line"></i> Processus de Vente</h3>
+                    <p data-i18n="seance_2_process_desc" style="font-size: 0.9rem; margin-top: 10px;">Outils commerciaux pour suivre le parcours client et automatiser les actions.</p>
+                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 15px;">
+                        <a href="assets/TP2/pipeline vs funnel.docx" class="btn" style="margin:0; background: #f59e0b; padding: 0.6rem;"><i class="fas fa-file-word"></i> Pipeline vs Funnel</a>
+                    </div>
                 </div>
 
                 <div class="card" style="border-top: 3px solid var(--primary);">
-                    <h3 style="color: var(--primary);"><i class="fas fa-laptop-code"></i> Travaux Pratiques</h3>
-                    <h4 style="margin: 10px 0;">TP Odoo - Gestion d'entreprise</h4>
-                    <p style="font-size: 0.9rem;">Prise en main de l'ERP Odoo. Configuration de société, catalogue, achat de stock, vente client et facturation.</p>
-                    <a href="assets/TP Odoo.pdf" class="btn"><i class="fas fa-file-pdf"></i> Télécharger le TP (PDF)</a>
+                    <h3 data-i18n="seance_2_tp" style="color: var(--primary);"><i class="fas fa-laptop-code"></i> Travaux Pratiques</h3>
+                    <p data-i18n="seance_2_tp_desc" style="font-size: 0.9rem; margin-top: 10px;">Prise en main du CRM, création de compte et compréhension du pipeline commercial.</p>
+                    <a href="assets/TP2/TP Découverte HubSpot.pdf" class="btn" style="margin-top: 15px; padding: 0.6rem;"><i class="fas fa-file-pdf"></i> TP HubSpot</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SÉANCE 1 -->
+        <div class="seance-container reveal">
+            <div class="seance-date"><i class="far fa-calendar-alt"></i> 09 Février 2026</div>
+            <h3 data-i18n="seance_1_title" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Séance 1 : Fondamentaux SI et Découverte ERP</h3>
+            
+            <div class="grid">
+                <div class="card" style="border-top: 3px solid #10b981;">
+                    <h3 data-i18n="seance_1_course" style="color: #10b981;"><i class="fas fa-book-open"></i> Support de Cours</h3>
+                    <p data-i18n="seance_1_course_desc" style="font-size: 0.9rem; margin-top: 10px;">Comprendre l’intégration de la communication digitale dans le SI.</p>
+                    <a href="assets/Introduction_QCM.docx" class="btn" style="background: #10b981; margin-top: 15px;"><i class="fas fa-file-word"></i> <span data-i18n="btn_download">Télécharger</span></a>
                 </div>
 
+                <div class="card" style="border-top: 3px solid var(--primary);">
+                    <h3 data-i18n="seance_1_tp" style="color: var(--primary);"><i class="fas fa-laptop-code"></i> Travaux Pratiques</h3>
+                    <p data-i18n="seance_1_tp_desc" style="font-size: 0.9rem; margin-top: 10px;">Prise en main de l'ERP Odoo. Configuration de société, catalogue, achat et vente.</p>
+                    <a href="assets/TP Odoo.pdf" class="btn" style="margin-top: 15px;"><i class="fas fa-file-pdf"></i> <span data-i18n="btn_download">Télécharger</span> TP Odoo</a>
+                </div>
             </div>
         </div>
 
     </div>
     
+    <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
     
     <script>
@@ -93,7 +150,7 @@
                 document.querySelectorAll('.reveal').forEach((el, index) => {
                     setTimeout(() => {
                         el.classList.add('active');
-                    }, index * 200); // Fait apparaître les séances l'une après l'autre
+                    }, index * 200);
                 });
             }, 100);
         });

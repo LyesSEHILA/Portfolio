@@ -2,39 +2,100 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Veille & Ressources</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille & Ressources | Marketing Numérique</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav>
-        <a href="index.html">Accueil</a>
-        <a href="travaux.html">Travaux & Cours</a>
-        <a href="projets.html">Projets & Certifs</a>
-        <a href="ressources.html">Ressources</a>
+        <div class="nav-links">
+            <a href="index.html" data-i18n="nav_home">Accueil</a>
+            <a href="travaux.html" data-i18n="nav_works">Travaux & Cours</a>
+            <a href="projets.html" data-i18n="nav_projects">Projets & Certifs</a>
+            <a href="ressources.html" class="active" data-i18n="nav_resources">Ressources</a>
+        </div>
+        <button id="lang-switch" class="lang-btn">
+            <span class="lang-text">EN</span>
+            <i class="fas fa-globe"></i>
+        </button>
     </nav>
 
     <div class="container">
-        <h2>Veille Technologique</h2>
-        <p>Ressources complémentaires pour l'enrichissement personnel.</p>
-        
-        <div class="grid">
-            <div class="card">
-                <h3>Intelligence Artificielle</h3>
-                <p>Article sur l'impact des LLM dans le développement web.</p>
-                <a href="https://openai.com/blog" target="_blank" class="btn">Lire l'article</a>
+        <header style="text-align: center; margin-bottom: 4rem;">
+            <h1 data-i18n="resources_header_title" style="font-size: 2.5rem; border:none;">Veille & Ressources Numériques</h1>
+            <p data-i18n="resources_header_subtitle" style="font-size: 1.1rem; color: #cbd5e1;">Sélection de ressources pour approfondir vos connaissances en Marketing et Technologies.</p>
+        </header>
+
+        <section class="reveal">
+            <h2><i class="fas fa-bullhorn" style="color: var(--secondary);"></i> <span data-i18n="res_marketing">Focus Marketing Numérique</span></h2>
+            <p data-i18n="res_marketing_desc" style="color: #cbd5e1; margin-bottom: 2rem;">Apprenez les leviers essentiels pour booster la visibilité et l'engagement digital.</p>
+            
+            <div class="grid">
+                <div class="card" style="border-top: 3px solid #ff4f00;">
+                    <div class="icon-box"><i class="fas fa-search-dollar" style="font-size: 2rem; color: #ff4f00;"></i></div>
+                    <h3>SEO & SEA (Search)</h3>
+                    <p>Comprendre le référencement naturel et payant avec Google Ads et les outils de mots-clés.</p>
+                    <a href="https://learning.google/intl/fr/google-ads/" target="_blank" class="btn" style="background: #ff4f00;"><span data-i18n="btn_access">Accéder</span> Google Ads</a>
+                </div>
+
+                <div class="card" style="border-top: 3px solid #f59e0b;">
+                    <div class="icon-box"><i class="fas fa-users" style="font-size: 2rem; color: #f59e0b;"></i></div>
+                    <h3>CRM & Inbound Marketing</h3>
+                    <p>Stratégies pour attirer des clients via du contenu de qualité et automatiser la relation client.</p>
+                    <a href="https://academy.hubspot.fr/" target="_blank" class="btn" style="background: #f59e0b;"><span data-i18n="btn_access">Accéder</span> HubSpot Academy</a>
+                </div>
+
+                <div class="card" style="border-top: 3px solid #00a4ef;">
+                    <div class="icon-box"><i class="fas fa-chart-pie" style="font-size: 2rem; color: #00a4ef;"></i></div>
+                    <h3>Analytics & Data</h3>
+                    <p>Mesurer l'impact des campagnes et analyser le comportement des utilisateurs sur site.</p>
+                    <a href="https://analytics.google.com/analytics/academy/" target="_blank" class="btn" style="background: #00a4ef;"><span data-i18n="btn_access">Accéder</span> Google Analytics</a>
+                </div>
             </div>
-            <div class="card">
-                <h3>Frameworks Modernes</h3>
-                <p>Comparatif entre React, Vue et Angular en 2025.</p>
-                <a href="#" class="btn">Voir la vidéo</a>
+        </section>
+
+        <section class="reveal" style="margin-top: 4rem;">
+            <h2><i class="fas fa-microchip" style="color: var(--primary);"></i> <span data-i18n="res_tech">Veille Technologique</span></h2>
+            <p data-i18n="res_tech_desc" style="color: #cbd5e1; margin-bottom: 2rem;">Les dernières tendances du développement et de l'innovation.</p>
+            
+            <div class="grid">
+                <div class="card" style="border-top: 3px solid #6366f1;">
+                    <div class="icon-box"><i class="fas fa-robot" style="font-size: 2rem; color: #6366f1;"></i></div>
+                    <h3>IA & Développement</h3>
+                    <p>L'impact des LLM comme ChatGPT et Claude sur le workflow des développeurs.</p>
+                    <a href="https://openai.com/blog" target="_blank" class="btn"><span data-i18n="btn_view">Voir</span> OpenAI Blog</a>
+                </div>
+
+                <div class="card" style="border-top: 3px solid #10b981;">
+                    <div class="icon-box"><i class="fas fa-leaf" style="font-size: 2rem; color: #10b981;"></i></div>
+                    <h3>Éco-conception (Green IT)</h3>
+                    <p>Développer des solutions numériques durables et à faible empreinte carbone.</p>
+                    <a href="https://eco-conception.design/" target="_blank" class="btn" style="background: #10b981;"><span data-i18n="btn_view">Voir</span> Guide Green IT</a>
+                </div>
+
+                <div class="card" style="border-top: 3px solid #ec4899;">
+                    <div class="icon-box"><i class="fas fa-code-branch" style="font-size: 2rem; color: #ec4899;"></i></div>
+                    <h3>Frameworks 2026</h3>
+                    <p>Suivre l'évolution de React, Next.js et des nouvelles architectures frontend.</p>
+                    <a href="https://stateofjs.com/" target="_blank" class="btn" style="background: #ec4899;"><span data-i18n="btn_view">Voir</span> State of JS</a>
+                </div>
             </div>
-            <div class="card">
-                <h3>Green IT</h3>
-                <p>Les bonnes pratiques pour un code plus écologique.</p>
-                <a href="#" class="btn">Consulter le guide</a>
-            </div>
-        </div>
+        </section>
     </div>
+
+    <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(() => {
+                document.querySelectorAll('.reveal').forEach((el, index) => {
+                    setTimeout(() => {
+                        el.classList.add('active');
+                    }, index * 200);
+                });
+            }, 100);
+        });
+    </script>
 </body>
 </html>

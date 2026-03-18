@@ -2,49 +2,118 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Projets & Certifications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets & Certifications | Lyes SEHILA</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav>
-        <a href="index.html">Accueil</a>
-        <a href="travaux.html">Travaux & Cours</a>
-        <a href="projets.html">Projets & Certifs</a>
-        <a href="ressources.html">Ressources</a>
+        <div class="nav-links">
+            <a href="index.html" data-i18n="nav_home">Accueil</a>
+            <a href="travaux.html" data-i18n="nav_works">Travaux & Cours</a>
+            <a href="projets.html" class="active" data-i18n="nav_projects">Projets & Certifs</a>
+            <a href="ressources.html" data-i18n="nav_resources">Ressources</a>
+        </div>
+        <button id="lang-switch" class="lang-btn">
+            <span class="lang-text">EN</span>
+            <i class="fas fa-globe"></i>
+        </button>
     </nav>
 
     <div class="container">
-        <h2>Projet Final (CRM)</h2>
-        <div class="card" style="border-color: var(--secondary);">
-            <h3>Projet CRM Complet</h3>
-            <p>Conception et réalisation d'une solution de gestion de la relation client. Ce projet intègre l'ensemble des compétences acquises.</p>
-            <br>
-            <a href="assets/Rapport_CRM.pdf" class="btn">Documentation Technique</a>
-            <a href="https://github.com/LyesSEHILA/crm-saas-project" class="btn" style="background: #4f46e5;">Code Source (GitHub)</a>
-            <a href="https://crm-saas-project.vercel.app" class="btn" style="background: #4f46e5;">Accédez à l'application</a>
-        </div>
+        
+        <!-- SECTION PROJETS RÉÉCRITE -->
+        <header style="margin-bottom: 5rem; text-align: left;">
+            <h1 data-i18n="projects_header_title" style="font-size: 3.5rem; margin-bottom: 1rem; border: none;">Réalisations Digitales</h1>
+            <p data-i18n="projects_header_desc" style="color: #94a3b8; font-size: 1.2rem; max-width: 600px;">Développement de solutions complexes, architecture de données et systèmes de gestion en mode SaaS.</p>
+        </header>
 
-        <h2>Soutenance</h2>
-        <div class="card">
-            <h3>Support de Présentation</h3>
-            <p>Diaporama visuel pour la soutenance orale du projet.</p>
-            <a href="assets/Plateforme-SaaS-de-Gestion-Commerciale-et-Financiere.pdf.pdf" class="btn">Télécharger les Slides</a>
-        </div>
+        <div class="project-grid">
+            <!-- PROJET 1 : CRM SAAS -->
+            <div class="project-card reveal">
+                <div class="project-content">
+                    <span class="project-tag" data-i18n="tag_featured">Featured Project</span>
+                    <h3 class="project-title" data-i18n="crm_title">Système CRM SaaS Multi-Client</h3>
+                    <p data-i18n="crm_desc" style="color: #cbd5e1; line-height: 1.6;">Conception d'une plateforme SaaS complète permettant de gérer la relation client, le suivi commercial et les facturations avec une architecture modulaire.</p>
+                    
+                    <div class="project-stats">
+                        <div class="stat-item"><i class="fas fa-layer-group"></i> Architecture SaaS</div>
+                        <div class="stat-item"><i class="fas fa-database"></i> SQL/NoSQL</div>
+                        <div class="stat-item"><i class="fab fa-react"></i> React Framework</div>
+                    </div>
 
-        <h2>Certifications</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Certification OpenClassrooms</h3>
-                <p>Apprenez à créer votre site web avec HTML5 et CSS3.</p>
-                <a href="assets/certif_html.png" class="btn">Voir la preuve</a>
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://crm-saas-project.vercel.app" target="_blank" class="btn" style="padding: 0.8rem 1.5rem; margin:0;"><i class="fas fa-external-link-alt"></i> <span data-i18n="btn_demo">Démo Live</span></a>
+                        <a href="https://github.com/LyesSEHILA/crm-saas-project" target="_blank" class="btn" style="background: rgba(255,255,255,0.05); border: 1px solid var(--border); padding: 0.8rem 1.5rem; margin:0;"><i class="fab fa-github"></i> <span data-i18n="btn_repo">Repository</span></a>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h3>Certification Google Digital</h3>
-                <p>Les principes fondamentaux du marketing numérique.</p>
-                <a href="assets/certif_google.pdf" class="btn">Voir la preuve</a>
+
+            <!-- PROJET 2 : PRESENTATION -->
+            <div class="project-card reveal" style="border-top: 1px solid rgba(236, 72, 153, 0.3);">
+                <div class="project-content">
+                    <span class="project-tag" data-i18n="tag_presentation" style="background: rgba(236, 72, 153, 0.15); color: #f9a8d4; border-color: rgba(236, 72, 153, 0.3);">Technical Presentation</span>
+                    <h3 class="project-title" data-i18n="slides_title">Documentation Technique & Architecture</h3>
+                    <p data-i18n="slides_desc" style="color: #cbd5e1; line-height: 1.6;">Support de présentation détaillé pour la soutenance orale. Analyse de l'impact financier, diagrammes de flux et modélisation de données.</p>
+                    
+                    <div class="project-stats">
+                        <div class="stat-item"><i class="fas fa-file-invoice-dollar"></i> Business Model</div>
+                        <div class="stat-item"><i class="fas fa-project-diagram"></i> UML Modeling</div>
+                    </div>
+
+                    <a href="assets/Plateforme-SaaS-de-Gestion-Commerciale-et-Financiere.pdf.pdf" class="btn" style="background: var(--secondary); padding: 0.8rem 1.5rem; margin:0;"><i class="fas fa-file-pdf"></i> <span data-i18n="btn_slides">Télécharger Slides</span></a>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+        <h2 data-i18n="cert_title">Certifications & Accomplissements</h2>
+        <div class="slider-container">
+            <div class="slider-track">
+                <!-- Bloc 1 des certifs -->
+                <div class="card" style="border-top: 3px solid #777BB4;">
+                    <div class="icon-box"><i class="fab fa-php" style="font-size: 2.2rem; color: #777BB4;"></i></div>
+                    <h3 data-i18n="cert_php">Expertise PHP</h3>
+                    <p data-i18n="cert_php_desc">Maîtrise du développement backend et des architectures serveurs avec PHP.</p>
+                    <a href="assets/Certifs/Certif_PHP.pdf" target="_blank" class="btn" style="background: #777BB4;"><i class="fas fa-certificate"></i> <span data-i18n="btn_consult">Consulter</span></a>
+                </div>
+                <div class="card" style="border-top: 3px solid #00a4ef;">
+                    <div class="icon-box"><i class="fas fa-magic" style="font-size: 2.2rem; color: #00a4ef;"></i></div>
+                    <h3 data-i18n="cert_copilot">Microsoft Copilot</h3>
+                    <p data-i18n="cert_copilot_desc">Optimisation de la productivité et automatisation avec l'IA générative.</p>
+                    <a href="assets/Certifs/CertificatDaccomplissement_Simplifiez votre travail avec Microsoft Copilot.pdf" target="_blank" class="btn" style="background: #00a4ef;"><i class="fas fa-eye"></i> <span data-i18n="btn_view">Voir</span></a>
+                </div>
+                <div class="card" style="border-top: 3px solid #009639;">
+                    <div class="icon-box"><i class="fas fa-sync-alt" style="font-size: 2.2rem; color: #009639;"></i></div>
+                    <h3 data-i18n="cert_scrum">Scrum Master</h3>
+                    <p data-i18n="cert_scrum_desc">Préparation avancée aux méthodologies agiles et gestion d'équipe Scrum.</p>
+                    <a href="assets/Certifs/CertificatDaccomplissement_Preparer la certification Certified Scrum Master .pdf" target="_blank" class="btn" style="background: #009639;"><i class="fas fa-tasks"></i> <span data-i18n="btn_view">Voir</span></a>
+                </div>
+
+                <!-- Bloc 2 (Double pour l'effet infini) -->
+                <div class="card" style="border-top: 3px solid #777BB4;">
+                    <div class="icon-box"><i class="fab fa-php" style="font-size: 2.2rem; color: #777BB4;"></i></div>
+                    <h3 data-i18n="cert_php">Expertise PHP</h3>
+                    <p data-i18n="cert_php_desc">Maîtrise du développement backend et des architectures serveurs avec PHP.</p>
+                    <a href="assets/Certifs/Certif_PHP.pdf" target="_blank" class="btn" style="background: #777BB4;"><i class="fas fa-certificate"></i> <span data-i18n="btn_consult">Consulter</span></a>
+                </div>
+                <div class="card" style="border-top: 3px solid #00a4ef;">
+                    <div class="icon-box"><i class="fas fa-magic" style="font-size: 2.2rem; color: #00a4ef;"></i></div>
+                    <h3 data-i18n="cert_copilot">Microsoft Copilot</h3>
+                    <p data-i18n="cert_copilot_desc">Optimisation de la productivité et automatisation avec l'IA générative.</p>
+                    <a href="assets/Certifs/CertificatDaccomplissement_Simplifiez votre travail avec Microsoft Copilot.pdf" target="_blank" class="btn" style="background: #00a4ef;"><i class="fas fa-eye"></i> <span data-i18n="btn_view">Voir</span></a>
+                </div>
+                <div class="card" style="border-top: 3px solid #009639;">
+                    <div class="icon-box"><i class="fas fa-sync-alt" style="font-size: 2.2rem; color: #009639;"></i></div>
+                    <h3 data-i18n="cert_scrum">Scrum Master</h3>
+                    <p data-i18n="cert_scrum_desc">Préparation avancée aux méthodologies agiles et gestion d'équipe Scrum.</p>
+                    <a href="assets/Certifs/CertificatDaccomplissement_Preparer la certification Certified Scrum Master .pdf" target="_blank" class="btn" style="background: #009639;"><i class="fas fa-tasks"></i> <span data-i18n="btn_view">Voir</span></a>
+                </div>
             </div>
         </div>
     </div>
+    <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
