@@ -49,6 +49,8 @@ const translations = {
         cert_scrum_desc: "Préparation avancée aux méthodologies agiles et gestion d'équipe Scrum.",
         cert_marketing: "Marketing Digital",
         cert_marketing_desc: "Expertise en stratégies de croissance numérique, SEO et analyse de performance.",
+        cert_rgpd: "Expert RGPD & Protection des Données",
+        cert_rgpd_desc: "Maîtrise de la conformité européenne sur la protection des données personnelles.",
         btn_view: "Voir",
         btn_consult: "Consulter",
 
@@ -140,6 +142,8 @@ const translations = {
         cert_scrum_desc: "Advanced preparation for agile methodologies and Scrum team management.",
         cert_marketing: "Digital Marketing",
         cert_marketing_desc: "Expertise in digital growth strategies, SEO and performance analysis.",
+        cert_rgpd: "GDPR & Data Protection Expert",
+        cert_rgpd_desc: "Mastery of European compliance on the protection of personal data.",
         btn_view: "View",
         btn_consult: "Consult",
 
