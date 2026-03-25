@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV (ATS Format) | Lyes SEHILA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .cv-section { margin-bottom: 3rem; text-align: left; }
+        .cv-item { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+        .cv-item:last-child { border-bottom: none; }
+        .cv-item h3 { color: var(--primary); margin-bottom: 0.5rem; }
+        .cv-meta { color: #94a3b8; font-size: 0.9rem; margin-bottom: 1rem; font-weight: 600; }
+        .cv-list { list-style: disc; padding-left: 1.5rem; color: #cbd5e1; line-height: 1.6; }
+        .cv-list li { margin-bottom: 0.5rem; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; }
+        .skill-cat h4 { color: var(--secondary); margin-bottom: 1rem; border-bottom: 2px solid var(--secondary); display: inline-block; padding-bottom: 4px; }
+        .contact-info { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; color: #cbd5e1; }
+        .contact-info span { display: flex; align-items: center; gap: 8px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="index.html" data-i18n="nav_home">Accueil</a>
+            <a href="travaux.html" data-i18n="nav_works">Travaux & Cours</a>
+            <a href="projets.html" data-i18n="nav_projects">Projets & Certifs</a>
+            <a href="ressources.html" data-i18n="nav_resources">Ressources</a>
+            <a href="cv.html" class="active" data-i18n="nav_cv">CV (ATS)</a>
+        </div>
+        <button id="lang-switch" class="lang-btn">
+            <span class="lang-text">EN</span>
+            <i class="fas fa-globe"></i>
+        </button>
+    </nav>
+
+    <div class="container">
+        <header style="text-align: center; margin-bottom: 4rem;">
+            <h1 data-i18n="cv_header_title" style="font-size: 3rem; border:none;">Curriculum Vitæ</h1>
+            <p data-i18n="cv_header_desc" style="font-size: 1.1rem; color: #cbd5e1;">Format ATS - Optimisé pour la lecture logicielle et humaine.</p>
+        </header>
+
+        <div class="contact-info reveal">
+            <span><i class="fas fa-envelope"></i> sehilalyes@gmail.com</span>
+            <span><i class="fas fa-phone"></i> 06 10 90 79 50</span>
+            <span><i class="fas fa-map-marker-alt"></i> Paris, France</span>
+            <span><i class="fab fa-linkedin"></i> Lyes Sehila</span>
+            <span><i class="fab fa-github"></i> LSehila</span>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <a href="assets/CV_Lyes_Sehila_ATS.pdf" target="_blank" class="btn btn-cv">
+                <i class="fas fa-file-pdf"></i> <span data-i18n="cv_download_ats">Télécharger version PDF</span>
+            </a>
+        </div>
+
+        <!-- EXPERIENCES -->
+        <section class="cv-section reveal">
+            <h2 data-i18n="cv_exp">Expériences Professionnelles</h2>
+            
+            <div class="cv-item">
+                <h3>Alternant – Chef de Projet SIRH</h3>
+                <div class="cv-meta">RTE (Réseau de Transport d'Électricité) | La Défense | 2025 - 2027</div>
+                <ul class="cv-list">
+                    <li>Gestion de projet et conduite du changement.</li>
+                    <li>Analyse des besoins métiers & rédaction de cahiers des charges.</li>
+                    <li>Gestion des prestataires et intégrateurs.</li>
+                    <li>Recette fonctionnelle et technique (tests, anomalies, validation).</li>
+                    <li>Sécurité et conformité des données (RGPD, IAM).</li>
+                    <li>Automatisation des processus RH (scripts, RPA).</li>
+                </ul>
+            </div>
+
+            <div class="cv-item">
+                <h3>Stagiaire – Analyse et remédiation de données</h3>
+                <div class="cv-meta">RTE (Réseau de Transport d'Électricité) | La Défense | Avr 2025 - Juin 2025</div>
+                <ul class="cv-list">
+                    <li>Analyse et remédiation de données issues d'une application obsolète.</li>
+                    <li>Utilisation de SQL Developer pour interroger, nettoyer et structurer les données.</li>
+                    <li>Rédaction et exécution de scripts Python pour l'automatisation des processus.</li>
+                </ul>
+            </div>
+
+            <div class="cv-item">
+                <h3>Chargé d'Assistance Voyage</h3>
+                <div class="cv-meta">Europ Assistance | Paris | Saisonnier</div>
+                <ul class="cv-list">
+                    <li>Réception et gestion des appels d'urgence des clients.</li>
+                    <li>Organisation des rapatriements sanitaires.</li>
+                    <li>Assistance médicale à distance.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FORMATION -->
+        <section class="cv-section reveal">
+            <h2 data-i18n="cv_edu">Formation Académique</h2>
+            
+            <div class="cv-item">
+                <h3>Master MIAGE – Systèmes d’Information Fiables et Intelligence des Données</h3>
+                <div class="cv-meta">Université Paris Nanterre | 2025 - 2027</div>
+            </div>
+
+            <div class="cv-item">
+                <h3>Licence Mathématiques et Informatique</h3>
+                <div class="cv-meta">Université Le Havre Normandie | Spécialité Informatique | 2021 - 2024</div>
+            </div>
+
+            <div class="cv-item">
+                <h3>Baccalauréat Général</h3>
+                <div class="cv-meta">Lycée Frères Abbache | Algérie | Spécialité Mathématiques & Physique | 2018 - 2020</div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="cv-section reveal">
+            <h2 data-i18n="cv_skills">Compétences Techniques</h2>
+            <div class="skills-grid">
+                <div class="skill-cat">
+                    <h4>Languages</h4>
+                    <p>Java, PHP, Python, JavaScript, C, R, HTML/CSS, SQL, PL/pgSQL</p>
+                </div>
+                <div class="skill-cat">
+                    <h4>Databases</h4>
+                    <p>MySQL, Oracle, PostgreSQL</p>
+                </div>
+                <div class="skill-cat">
+                    <h4>Frameworks & Tools</h4>
+                    <p>React, Symfony, Bootstrap, Git/GitLab, UML, WordPress, Power BI, JUnit</p>
+                </div>
+                <div class="skill-cat">
+                    <h4>Environments</h4>
+                    <p>Linux, Windows, Shell, VS Code, PhpStorm</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOFT SKILLS & LANGUES -->
+        <div class="grid reveal" style="margin-top: 0;">
+            <section class="cv-section" style="margin-bottom: 0;">
+                <h2 data-i18n="cv_soft">Soft Skills</h2>
+                <ul class="cv-list">
+                    <li>Esprit Critique & Créativité</li>
+                    <li>Adaptabilité & Persévérance</li>
+                    <li>Excellent relationnel & Curiosité</li>
+                </ul>
+            </section>
+            <section class="cv-section" style="margin-bottom: 0;">
+                <h2 data-i18n="cv_lang">Langues</h2>
+                <ul class="cv-list">
+                    <li>Français (Bilingue C2)</li>
+                    <li>Anglais (TOEIC 800/900 - B2)</li>
+                    <li>Arabe & Kabyle (Langues maternelles)</li>
+                </ul>
+            </section>
+        </div>
+
+    </div>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(() => {
+                document.querySelectorAll('.reveal').forEach((el, index) => {
+                    setTimeout(() => {
+                        el.classList.add('active');
+                    }, index * 200);
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html>

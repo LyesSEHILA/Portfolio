@@ -288,7 +288,7 @@ h2 { border-left: 4px solid var(--primary); padding-left: 1rem; margin-top: 3rem
 
 @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-350px * 3 - 2.5rem * 3)); } /* Ajusté selon la largeur des cartes + gap */
+    100% { transform: translateX(calc(-350px * 4 - 2.5rem * 4)); } /* Ajusté pour 4 cartes + gap */
 }
 
 /* Ajustement des cartes pour le slider */

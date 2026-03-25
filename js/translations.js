@@ -5,11 +5,23 @@ const translations = {
         nav_works: "Travaux & Cours",
         nav_projects: "Projets & Certifs",
         nav_resources: "Ressources",
+        nav_cv: "CV (ATS)",
         
         hero_profile: "Profil Professionnel",
         btn_cv: "Télécharger mon CV",
         btn_linkedin: "LinkedIn Network",
         
+        cv_header_title: "Curriculum Vitæ (Format ATS)",
+        cv_header_desc: "Une version structurée et optimisée de mon parcours pour une lecture facilitée.",
+        cv_download_ats: "Télécharger version PDF",
+        
+        cv_exp: "Expériences Professionnelles",
+        cv_edu: "Formation Académique",
+        cv_skills: "Compétences Techniques",
+        cv_projects: "Exemples de Projets",
+        cv_soft: "Soft Skills",
+        cv_lang: "Langues",
+
         updates_title: "Mises à jour récentes",
         updates_subtitle: "Accès rapide aux derniers travaux et cours publiés sur le site.",
         
@@ -35,6 +47,8 @@ const translations = {
         cert_copilot_desc: "Optimisation de la productivité et automatisation avec l'IA générative.",
         cert_scrum: "Scrum Master",
         cert_scrum_desc: "Préparation avancée aux méthodologies agiles et gestion d'équipe Scrum.",
+        cert_marketing: "Marketing Digital",
+        cert_marketing_desc: "Expertise en stratégies de croissance numérique, SEO et analyse de performance.",
         btn_view: "Voir",
         btn_consult: "Consulter",
 
@@ -82,11 +96,23 @@ const translations = {
         nav_works: "Works & Courses",
         nav_projects: "Projects & Certs",
         nav_resources: "Resources",
+        nav_cv: "CV (ATS)",
         
         hero_profile: "Professional Profile",
         btn_cv: "Download my CV",
         btn_linkedin: "LinkedIn Network",
         
+        cv_header_title: "Curriculum Vitæ (ATS Format)",
+        cv_header_desc: "A structured and optimized version of my journey for easy reading.",
+        cv_download_ats: "Download PDF Version",
+        
+        cv_exp: "Work Experience",
+        cv_edu: "Academic Background",
+        cv_skills: "Technical Skills",
+        cv_projects: "Project Examples",
+        cv_soft: "Soft Skills",
+        cv_lang: "Languages",
+
         updates_title: "Recent Updates",
         updates_subtitle: "Quick access to the latest works and courses published on the site.",
         
@@ -112,6 +138,8 @@ const translations = {
         cert_copilot_desc: "Productivity optimization and automation with generative AI.",
         cert_scrum: "Scrum Master",
         cert_scrum_desc: "Advanced preparation for agile methodologies and Scrum team management.",
+        cert_marketing: "Digital Marketing",
+        cert_marketing_desc: "Expertise in digital growth strategies, SEO and performance analysis.",
         btn_view: "View",
         btn_consult: "Consult",
 
